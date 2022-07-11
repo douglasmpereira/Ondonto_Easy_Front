@@ -1,12 +1,9 @@
-import "./styles.css"
+// import "./styles.css"
 
 const Cadastro = () => {
     return(
         <>
         <div className="container">
-
-            
-        
             <form className="containerForm">
              
                 <input  type="text" placeholder='Nome Completo ' required/>
@@ -27,11 +24,9 @@ const Cadastro = () => {
 
                 <input type="text" placeholder='Complemento'/>
                 <div>
-                    <button type="submit" className="btnCadastrar"> Cadastrar</button>
+                    <button type="submit" className="btnCadastrar">Cadastrar</button>
                     
                 </div>
-                
-             
             </form>
             
             </div>

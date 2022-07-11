@@ -15,7 +15,6 @@ root.render(
   <React.StrictMode >
     <HeaderSecundario/>
     <App/>
-    
   </React.StrictMode>
   
 );
