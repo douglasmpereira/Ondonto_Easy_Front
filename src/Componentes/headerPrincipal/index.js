@@ -17,7 +17,7 @@ const HeaderPrincipal = () => {
           </Nav>
           <Nav.Link
             className="login me-3"
-            href="/login"
+            href="/cadastrar"
           >
             CADASTRAR{" "}
           </Nav.Link>

@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { FaStore } from "react-icons/fa";
 import "./header2.css";
 import logo from "../../imagens/iconeSGTBranco.PNG"
+import { FcRating } from "react-icons/fc";
 
 const HeaderSecundario = () => {
   return (
@@ -24,12 +25,9 @@ const HeaderSecundario = () => {
               SISTEMA DE GESTÃO DE TICKETS
             </Nav.Link>  
           </Nav>
-          <Nav.Link
-            className="login2 me-3"
-            href="/login"
-          >
-            CADASTRAR{" "}
-          </Nav.Link>
+          <div>
+          <FcRating className='image me-4' size={35}/>
+          </div>
         </Navbar>
       </div>
     </>
