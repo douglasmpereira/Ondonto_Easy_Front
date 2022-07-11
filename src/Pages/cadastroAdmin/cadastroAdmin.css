@@ -1,10 +1,15 @@
-body{
-    /* background-color: #56CDD1; */
-    
-  }
+
 .dadosClinica {
     align-items: center;
 }
+.dadosClin{
+  margin-top: 10px;
+  margin-bottom: 60px;
+  font-size: 70%;
+  justify-content: center;
+
+}
+
 
   
   

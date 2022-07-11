@@ -9,12 +9,12 @@ const CadastroAdmin =()=>{
     return (
         <>
         <HeaderSecundario/>
-        <div className="container">
+        <div className="container dadosClin" >
             <div className="row">
                 <div className="dadosClinica col-md-4">
                 <Perfil/>
                 </div>
-                <div className="dadosClinica col-md-8">
+                <div className="dadosClinica col-md-8 mt-2">
                     Email: OdontoTech@gmail.com, Local: Rua Ernesto, 258 - Centro, Telefone: 24 992626653
                 </div>
                 

@@ -39,6 +39,10 @@
     
     
 }
+.titulosgt{
+   margin-left: 100px;
+   font-size:18px;
+}
 
 /*hover do login e logout*/
 .login2:hover{
