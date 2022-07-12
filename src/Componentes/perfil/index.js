@@ -1,6 +1,7 @@
 
 import { FcRating } from "react-icons/fc";
 import "./perfil.css"
+import { MdAccountCircle} from "react-icons/md"; 
 
 const Perfil = () => {
     return(
@@ -8,7 +9,7 @@ const Perfil = () => {
         <div className="cperfil container">
             <div className="row">
                 <div className="col-md-4">
-                    <FcRating size={35}/>
+                    <MdAccountCircle size={35}/>
                 </div>
                 <div className="col-md-8 ">
                     <div className="perfil row ">Administrador</div>

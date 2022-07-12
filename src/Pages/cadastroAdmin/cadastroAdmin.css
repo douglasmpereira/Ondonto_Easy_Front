@@ -1,13 +1,18 @@
 
 .dadosClinica {
     align-items: center;
+    background-color: white;
 }
 .dadosClin{
   margin-top: 10px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   font-size: 70%;
   justify-content: center;
 
+}
+.titulocad{
+  font-weight: bold;
+  font-size: 29px;
 }
 
 

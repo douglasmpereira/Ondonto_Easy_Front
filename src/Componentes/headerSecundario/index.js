@@ -5,6 +5,7 @@ import { FaStore } from "react-icons/fa";
 import "./header2.css";
 import logo from "../../imagens/iconeSGTBranco.PNG"
 import { FcRating } from "react-icons/fc";
+import { MdAccountCircle } from "react-icons/md";
 
 const HeaderSecundario = () => {
   return (
@@ -26,7 +27,7 @@ const HeaderSecundario = () => {
             </Nav.Link>  
           </Nav>
           <div>
-          <FcRating className='image me-4' size={35}/>
+          <MdAccountCircle className='image me-4' size={35}/>
           </div>
         </Navbar>
       </div>
