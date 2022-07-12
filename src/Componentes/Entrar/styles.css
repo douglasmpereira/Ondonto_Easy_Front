@@ -1,0 +1,62 @@
+.card-login {
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  display: block;
+}
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: #000 1px solid;
+}
+.field svg {
+  height: 35px;
+  padding: 1px 2px;
+  margin: 5px 0;
+}
+.card-login input {
+  width: 100%;
+  background-color: transparent;
+  border-bottom: 1px solid #000;
+  height: 35px;
+  padding: 1px 2px;
+  margin: 5px 0;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+.card-login input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+::placeholder {
+  color: #000;
+}
+
+.button {
+  width: 95%;
+  margin: 10px;
+  border-radius: 30px;
+  border: 0px;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #fff;
+  cursor: pointer;
+  margin: 3.3rem auto 2.2rem;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.options a {
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+}
