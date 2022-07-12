@@ -7,14 +7,15 @@ import Navbar from "react-bootstrap/Navbar";
 const Cadastro = () => {
     return(
         <>
-        <div className="contCli container">
+        <div className="contCli container card field">
+            <form>
             <div className=" row">
-                <div className="col"> 
+                <div className="col infoP"> 
                     <input type="text" placeholder="Nome " required />
                     <input type="text" placeholder="CPF" required />
                     <input type="text" placeholder="Data Nascimento " required />
                     <input type="text" placeholder="Telefone " required />
-                    <input type="text" placeholder="E-mail " required />
+                   
                 </div>
             </div>
             <div className="row">
@@ -26,11 +27,21 @@ const Cadastro = () => {
                 <div className="col">
                     <input type="text" placeholder="UF" required />
                     <input type="text" placeholder="Bairro" required />
-                    <input type="text" width="40" placeholder="Nº" required />
-                    
+                    <input type="text" width="40" placeholder="Nº" required />      
                 </div>
+           
+
+                </div>
+                <div className="row">
+                <div className="col teste">
+                    <input type="email" placeholder="Seu melhor @email " required />
+                    <input type="text" placeholder="Senha" required />
+                    <input type="text" placeholder="Repita sua senha" required />
+                <div/>
+            </div>
              <button type="submit" className="btnCadastrar mt-4">Cadastrar</button>
             </div>
+            </form>
         </div>
     </>
     );

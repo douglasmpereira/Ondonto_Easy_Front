@@ -1,9 +1,21 @@
+  .field {
+    display: flex;
+    justify-content: center;
+  
+  }
+
 .btnCadastrar{
     background-color: white;
     border: 1px solid black;
     border-radius: 25px;
     
     
+}
+div .col{
+    margin-bottom: -70px
+}
+div .teste{
+    margin-top: 15px
 }
 .btnCadastrar:hover{
     
@@ -12,14 +24,37 @@
     box-shadow: 3px 3px rgba(0, 0, 0, 0.301);
 }
 
-input{
+/* input{
     height: 20%;
     border: 0;
     width: 100%;
     border-bottom: 1px solid black;
     color: rgb(0, 0, 0);
     background-color: rgba(255, 255, 255, 0);
-} 
+
+  
+}  */
+
+.card input {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #000;
+    height: 15%;
+    padding: 8px 2px;
+    margin: 5px 0;
+    box-shadow: 0 0 0 0;
+    border: 1;
+    outline: 0;
+  }
+  .infoP input {
+    height: 11.25%;
+   
+  }
+  .card input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+  }
 
 
 .contCli {
@@ -27,5 +62,8 @@ input{
     align-items: center;
     background-color:  #56CDD1;
     width: 80%;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.301);
+    
 }
+
 
