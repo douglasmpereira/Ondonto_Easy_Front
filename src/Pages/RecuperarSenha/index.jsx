@@ -1,6 +1,6 @@
 import Rec from "../../Componentes/Rec/index";
 import HeaderPrincipal from "../../Componentes/headerPrincipal";
-import Logo from "../../imagens/logoSGT.jpeg";
+import Logo from "../../imagens/LoginCadastro.png";
 import "./styles.css";
 const RecuperarSenha = () => {
   return (

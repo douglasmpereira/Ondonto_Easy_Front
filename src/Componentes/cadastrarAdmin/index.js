@@ -12,13 +12,14 @@ const CadastrarAdmin = () => {
     <div className="contAdmin container">
         <div className=" row mt-4 ">
             <div className="col"> 
-            <input type="text" placeholder="    Cargo " required />
-            <input type="text" placeholder="    Nome " required />
-            <input type="text" placeholder="    CPF " required />
-            <input type="text" placeholder="    E-mail " required />
-            <input type="text" placeholder="    Senha " required />
+
+            <input className="inputAdmin" type="text" placeholder="Cargo " required />
+            <input className="inputAdmin" type="text" placeholder="Nome " required />
+            <input className="inputAdmin" type="text" placeholder="CPF " required />
+            <input className="inputAdmin" type="text" placeholder="E-mail " required />
+            <input className="inputAdmin" type="text" placeholder="Senha " required />
+         <button type="submit" className="btnCadastrar1 mt-4">Cadastrar</button>
             </div>
-         <button type="submit" className="btnCadastrar mt-4">Cadastrar</button>
         </div>
     </div>
       

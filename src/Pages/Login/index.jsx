@@ -1,7 +1,8 @@
 import Entrar from "../../Componentes/Entrar/index";
 import HeaderPrincipal from "../../Componentes/headerPrincipal";
 import "./styles.css";
-import Logo from "../../imagens/logoSGT.jpeg";
+import Logo from "../../imagens/LoginCadastro.png";
+
 const Login = () => {
   return (
     <>
