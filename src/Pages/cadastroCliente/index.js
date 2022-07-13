@@ -70,7 +70,7 @@ const CadastroCliente = () => {
               alt="img"
             />
           </div>
-          <div className="col-md-6 " >
+          <div className="col-md-6 mt-5" >
             <h1 className="tit1 text-center">Faça seu cadastro agora !</h1>
             <h3 className="tit2 text-center">Crie sua conta e make it Easier</h3>
             <Cadastro adicionarCliente={adicionarCliente} nome={nome} setNome={setNome} telefone={telefone} 
