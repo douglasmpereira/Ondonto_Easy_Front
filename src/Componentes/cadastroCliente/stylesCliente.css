@@ -1,14 +1,12 @@
   .field {
     display: flex;
     justify-content: center;
-  
   }
 
 .btnCadastrar{
     background-color: white;
     border: 1px solid black;
-    border-radius: 25px;
-    
+    border-radius: 25px; 
     
 }
 div .col{
@@ -23,18 +21,6 @@ div .teste{
     background-color: #03A9F4;
     box-shadow: 3px 3px rgba(0, 0, 0, 0.301);
 }
-
-/* input{
-    height: 20%;
-    border: 0;
-    width: 100%;
-    border-bottom: 1px solid black;
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 255, 255, 0);
-
-  
-}  */
-
 .card input {
     width: 100%;
     background-color: transparent;
