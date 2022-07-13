@@ -12,11 +12,11 @@ const HeaderSecundario = () => {
     <>
       <div className="header2">
         <Navbar className="navbar ms-3">
-          <Navbar.Brand href="/home">
+          <Navbar.Brand href="/Login">
             <img class="imagem" src={logo} alt="Logotipo do site, SGT"/>
           </Navbar.Brand>
           <Nav className="me-auto "> 
-          <Nav.Link className="home" href="/home">
+          <Nav.Link className="home" href="/Login">
               Home
             </Nav.Link>
             <Nav.Link className="dashboards" href="/dashboards">

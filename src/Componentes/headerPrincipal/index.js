@@ -11,13 +11,16 @@ const HeaderPrincipal = () => {
       <div className="header">
         <Navbar className="navbar ms-3">
           <Navbar.Brand href="/home">
+            <Nav.Link href="/Login">
             <img class="imagem" src={logo} alt="Logotipo do site, SGT"/>
+            
+            </Nav.Link>
           </Navbar.Brand>
           <Nav className="me-auto ">   
           </Nav>
           <Nav.Link
             className="login me-3"
-            href="/cadastrar"
+            href="/cadastroCliente"
           >
             CADASTRAR{" "}
           </Nav.Link>

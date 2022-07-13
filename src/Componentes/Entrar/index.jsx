@@ -1,5 +1,6 @@
 import "./styles.css";
 import { useState, useContext } from "react";
+import { Nav } from "react-bootstrap";
 const Entrar = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
@@ -65,7 +66,18 @@ const Entrar = () => {
 
       <div className="options">
         <a href="">Esqueceu senha?</a>
-        <a href="">Criar conta</a>
+        <Nav.Link
+           
+            href="/cadastroCliente"
+          >
+            CADASTRAR{" "}
+          </Nav.Link>
+          <Nav.Link
+           
+            href="/CadastroAdmin"
+          >
+            ADMIN{" "}
+          </Nav.Link>
       </div>
     </>
   );
