@@ -19,8 +19,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode >
     
-    {/* <CadastroAdmin/> */}
-    <CadastroCliente/>
+    <CadastroAdmin/>
+    {/* <CadastroCliente/> */}
     {/* <Login/> */}
     {/* <RecuperarSenha/> */}
   </React.StrictMode>

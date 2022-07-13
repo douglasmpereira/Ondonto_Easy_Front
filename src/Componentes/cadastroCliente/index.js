@@ -11,7 +11,7 @@ const Cadastro = ({adicionarCliente, nome, setNome, telefone, setTelefone, cpf, 
             <form>
             <div className=" row">
                 <div className="col infoP"> 
-                    <input type="text" placeholder="Nome " value={nome} onChange={(e) => setNome(e.target.value)}/>
+                    <input type="text" placeholder="Nome " required value={nome} onChange={(e) => setNome(e.target.value)}/>
                     <input type="text" placeholder="CPF" required value={cpf} onChange={(e) => setCpf(e.target.value)} />
                     <input type="text" placeholder="Data Nascimento " required value={dtnascimento} onChange={(e) => setDtnascimento(e.target.value)}/>
                     <input type="text" placeholder="Telefone " required value={telefone} onChange={(e) => setTelefone(e.target.value)}/>
