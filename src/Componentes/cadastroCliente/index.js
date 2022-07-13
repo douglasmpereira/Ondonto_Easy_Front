@@ -1,27 +1,26 @@
 import "./stylesCliente.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaBeer } from 'react-icons/fa';
-import { Nav } from "react-bootstrap";
-import Navbar from "react-bootstrap/Navbar";
 
-const Cadastro = () => {
+
+
+const Cadastro = ({adicionarCliente, nome, setNome, telefone, setTelefone, cpf, setCpf, dtnascimento, setDtnascimento,
+    email, setEmail, senha, setSenha, cep, setCep}) => {
     return(
         <>
         <div className="contCli container card field">
             <form>
             <div className=" row">
                 <div className="col infoP"> 
-                    <input type="text" placeholder="Nome " required />
-                    <input type="text" placeholder="CPF" required />
-                    <input type="text" placeholder="Data Nascimento " required />
-                    <input type="text" placeholder="Telefone " required />
-                   
+                    <input type="text" placeholder="Nome " value={nome} onChange={(e) => setNome(e.target.value)}/>
+                    <input type="text" placeholder="CPF" required onChange={(e) => setCpf(e.target.value)} />
+                    <input type="text" placeholder="Data Nascimento " required onChange={(e) => setDtnascimento(e.target.value)}/>
+                    <input type="text" placeholder="Telefone " required onChange={(e) => setTelefone(e.target.value)}/>
                 </div>
             </div>
             <div className="row">
                 <div className="col">
-                    <input type="text" placeholder="CEP " required />
-                    <input type="text" placeholder="CIDADE" required />
+                    <input type="text" placeholder="CEP " required onChange={(e) => setCep(e.target.value)} />
+                    <input type="text" placeholder="Cidade" required />
                     <input type="text" placeholder="Complemento" required />
                 </div>
                 <div className="col">
@@ -34,12 +33,12 @@ const Cadastro = () => {
                 </div>
                 <div className="row">
                 <div className="col teste">
-                    <input type="email" placeholder="Seu melhor @email " required />
-                    <input type="text" placeholder="Senha" required />
+                    <input type="email" placeholder="Seu melhor @email " required onChange={(e) => setEmail(e.target.value)} />
+                    <input type="text" placeholder="Senha" required onChange={(e) => setSenha(e.target.value)} />
                     <input type="text" placeholder="Repita sua senha" required />
                 <div/>
             </div>
-             <button type="submit" className="btnCadastrar mt-4">Cadastrar</button>
+             <button type="button" className="btnCadastrar mt-4" onClick={adicionarCliente}>Cadastrar</button>
             </div>
             </form>
         </div>

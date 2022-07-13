@@ -22,7 +22,7 @@ root.render(
     <CadastroAdmin/>
     <CadastroCliente/>
     <Login/>
-    <RecuperarSenha/>
+    {/* <RecuperarSenha/> */}
   </React.StrictMode>
   
   
