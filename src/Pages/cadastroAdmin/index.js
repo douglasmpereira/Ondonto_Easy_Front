@@ -49,7 +49,7 @@ const CadastroAdmin =()=>{
         setCpf("")
         setEmail("")
         setSenha("")
-        setCargo("")
+        setCargo(0)
 
     }
 
