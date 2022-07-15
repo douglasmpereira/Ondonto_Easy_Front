@@ -10,6 +10,7 @@ export default function ApplicationRoutes(){
     return(
         <BrowserRouter>
             <Routes>
+            <Route path="/" element={<Login/>} />
                <Route path="/login" element={<Login/>} />
                <Route path="/cadastroCliente" element={<CadastroCliente/>} />
                <Route path="/cadastroAdmin" element={<CadastroAdmin/>} />
