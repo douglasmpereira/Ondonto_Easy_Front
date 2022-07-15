@@ -1,6 +1,7 @@
 import "./styles.css";
 import { useState, useContext } from "react";
 import { Nav } from "react-bootstrap";
+import ModalMenu from "../modal";
 const Entrar = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
@@ -78,6 +79,7 @@ const Entrar = () => {
           >
             ADMIN{" "}
           </Nav.Link>
+          <ModalMenu/>
       </div>
     </>
   );

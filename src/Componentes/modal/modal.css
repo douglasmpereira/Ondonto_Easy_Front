@@ -1,0 +1,24 @@
+.modal-content{
+    width: 120%;
+   
+}
+.title-modal{
+    margin-left: 30%;
+}
+.btn-modal{
+    background-color: #6c757d;
+    border: 0;
+    
+   
+}
+.btn-modal:hover{
+    
+    color: rgb(0, 0, 0);
+    background-color: rgb(23, 140, 8);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.301);
+}
+.btn-cancelar:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(177, 16, 16);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.301);
+}
