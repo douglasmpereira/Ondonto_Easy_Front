@@ -34,8 +34,8 @@ function ModalMenu({salvarAgendamento}) {
 
         <input className="inputAdmin" type="text" placeholder="Nome " required />
             <input className="inputAdmin" type="text" placeholder="CPF " required />
-            <input className="inputAdmin" type="text" placeholder="E-mail " required />
-            <input className="inputAdmin" type="text" placeholder="Senha "required />
+            <input className="inputAdmin" type="text" placeholder="Telefone " required />
+            <input className="inputAdmin" type="text" placeholder="Idade" required />
          
 
         <select
@@ -58,10 +58,11 @@ function ModalMenu({salvarAgendamento}) {
               <option className = "boxselect"  value="1">19:59</option>
              
             </select>
+
             <select
               className="">
               <option className = "boxselect" value="0" disabled selected>Preço</option>
-              <option className = "boxselect"  value="1">R$ 130,00</option>
+              
               
             </select>
            
