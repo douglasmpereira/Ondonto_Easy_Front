@@ -37,7 +37,7 @@ const Cadastro = ({adicionarCliente, nome, setNome, telefone, setTelefone, cpf, 
                     <input type="text" placeholder="Senha" required value={senha} onChange={(e) => setSenha(e.target.value)} />
                     <input type="text" placeholder="Repita sua senha" required />
                 <div/>
-            </div>
+                  </div>
              <button type="button" className="btnCadastrar mt-5 mb-4" onClick={adicionarCliente}>Cadastrar</button>
             </div>
             </form>
