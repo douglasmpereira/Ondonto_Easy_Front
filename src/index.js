@@ -9,9 +9,9 @@ import AgendamentosFuncionario from "./Componentes/agendamentosFuncionario"
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App/>; */}
+    <App/>;
     {/* <TabelaDados/>  */}
-    <AgendamentosFuncionario/>
+    {/* <AgendamentosFuncionario/> */}
   
   </React.StrictMode>,
 

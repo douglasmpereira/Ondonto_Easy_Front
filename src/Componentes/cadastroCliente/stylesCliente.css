@@ -52,4 +52,7 @@ div .teste{
     
 }
 
-
+.mensagemErro{
+  font-size: 10px;
+  color: red;
+}
