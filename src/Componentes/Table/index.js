@@ -105,9 +105,19 @@ const TabelaDados = ({ agendamentos, setAgendamentos }) => {
     return alert("Itens excluidos");
   };
   //  marcacao.forEach((item) => deletar(item))
-
+  const filtrarItens = (objeto, atributo) => {
+   
+    const itensFiltrados = agendamentos.map((filtrados) => filtrados.cliente.nome);
+    console.log(itensFiltrados)
+    
+  } 
+  const teste = () => {
+    console.log(agendamentos.cliente)
+  }
+  
   return (
     <>
+    <button onClick={filtrarItens}>aperte</button>
       <div className="contTab container">
         <div className="r1Tab row">
           <div className="col-sm">
@@ -208,25 +218,26 @@ const TabelaDados = ({ agendamentos, setAgendamentos }) => {
           </div>
         </div>
         <div className="r3Tab row">
-          <div className="colTab2 col-sm me-2">
-           
+          <div className="colTab2 col-sm me-2">          
             {Array.from(Array(pages), (agendamentos, index) => {
               return (
+               
                 <button
                   key={index}
                   className="numberPage"
                   value={index}
                   onClick={(e) => {
-                    setCurrentPage(Number(e.target.value));
-                  }}
-                  style={
-                    index === currentPage ? { backgroundColor: "gray" } : null
-                  }
-                >
-                  {index + 1}
-                </button>
-              );
-            })}
+                      setCurrentPage(Number(e.target.value));
+                    }}
+                    style={
+                        index === currentPage ? { backgroundColor: "gray" } : null
+                      }
+                    >
+                      {index + 1}
+                    </button>
+                 );
+                  })}
+               
           </div>
         </div>
       </div>

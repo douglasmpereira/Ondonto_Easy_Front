@@ -56,7 +56,7 @@ const Cadastro = ({adicionarCliente, nome, setNome, telefone, setTelefone, cpf, 
                 <div className="col teste">
                     <input type="email" placeholder="Seu melhor @email " required value={email} onChange={(e) => setEmail(e.target.value)} />
                     <input type="password" placeholder="Senha" required value={senha} onChange={(e) => setSenha(e.target.value)} />
-                    <input type="password" placeholder="Repita sua senha" required value={senha2} onChange={(e) => setSenha2(e.target.value)} />
+                    <input type="password" placeholder="Repita sua senha" required />
                 <div/>
                
             </div>
