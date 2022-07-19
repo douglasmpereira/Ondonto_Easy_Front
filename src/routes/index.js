@@ -4,7 +4,6 @@ import CadastroCliente from "../Pages/cadastroCliente";
 import Login from "../Pages/Login";
 import RecuperarSenha from "../Pages/RecuperarSenha";
 
-
 export default function ApplicationRoutes(){
 
     return(
@@ -15,7 +14,6 @@ export default function ApplicationRoutes(){
                <Route path="/cadastroCliente" element={<CadastroCliente/>} />
                <Route path="/cadastroAdmin" element={<CadastroAdmin/>} />
                <Route path="/RecuperarSenha" element={<RecuperarSenha/>} />
-              
             </Routes>
         </BrowserRouter>
     );

@@ -48,7 +48,7 @@ const Cadastro = ({adicionarCliente, nome, setNome, telefone, setTelefone, cpf, 
                 <div className="col-md-6">
                     <input type="text" placeholder="UF" disabled {...register("uf" )}  />
                     <input type="text" placeholder="Bairro" disabled {...register("neighborhood" )} />
-                    <input type="text" width="40" placeholder="Nº" required />      
+                    <input type="text" width="40" placeholder="Nº" required />
                 </div>
            
                 </div>

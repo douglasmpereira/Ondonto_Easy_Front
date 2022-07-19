@@ -1,7 +1,11 @@
 import "./styles.css";
-import { useState, useContext } from "react";
+import { useState, useEffect } from 'react';
 import { Nav } from "react-bootstrap";
 import ModalMenu from "../modal";
+import { getCliente } from '../service/ClienteService/index';
+import { getAdmin } from './../service/AdminService/index';
+import { getFuncionario } from './../service/FuncionarioService/index';
+
 const Entrar = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
@@ -9,6 +13,57 @@ const Entrar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+  
+  const [admin, setAdmin] = useState([]);
+  const [funcionario, setFuncionario] = useState([]);
+  const [clientes, setClientes] = useState([]);
+
+  useEffect(()=> {
+    getAdmin().then((response) => {
+      console.log(response)
+      setAdmin(response);
+    });
+  },[admin]);
+  
+  useEffect(()=> {
+    getFuncionario().then((response) => {
+      console.log(response)
+      setFuncionario(response);
+    });
+  },[funcionario]);
+  
+  useEffect(()=> {
+  getCliente().then((response) => {
+    console.log(response)
+    setClientes(response);
+  });
+},[clientes]);
+
+  const VerificarLogin = () => {
+    admin.map((admin) => {
+      if(login === admin.email && senha === admin.senha){
+        alert(`Olá ${admin.nome}`);
+      }else{
+        
+
+      funcionario.map((funcionario) => {
+        if(login === funcionario.email && senha === funcionario.senha && funcionario.cargo.id === 1){
+          alert(`Olá ${funcionario.nome}`);
+        } else if (login === funcionario.email && senha === funcionario.senha && funcionario.cargo.id === 2){
+          alert(`Olá ${funcionario.nome}`);
+        } else {
+          clientes.map((cliente) => {
+            if(login === cliente.email && senha === cliente.senha){
+              alert(`Òlá ${cliente.nome}`);
+          } else {
+              alert("Login ou senha inválidos")
+            }
+          }
+        )}
+      })
+    }})
+  }
+
   return (
     <>
       <h1 className="title">Já tem cadastro?</h1>
@@ -59,7 +114,7 @@ const Entrar = () => {
           />
         </div>
         <div className="actions">
-          <button className="button" type="submit">
+          <button className="button" type="submit" onClick={VerificarLogin}>
             Entrar
           </button>
         </div>
