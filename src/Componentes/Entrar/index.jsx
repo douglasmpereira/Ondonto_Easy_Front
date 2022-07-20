@@ -1,67 +1,38 @@
 import "./styles.css";
-import { useState, useEffect } from 'react';
+import { useState } from "react";
 import { Nav } from "react-bootstrap";
 import ModalMenu from "../modal";
-import { getCliente } from '../service/ClienteService/index';
-import { getAdmin } from './../service/AdminService/index';
-import { getFuncionario } from './../service/FuncionarioService/index';
+import { getbyEmailCliente } from '../service/ClienteService/index';
 
 const Entrar = () => {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
+  const [cliente, setCliente] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
-  
-  const [admin, setAdmin] = useState([]);
-  const [funcionario, setFuncionario] = useState([]);
-  const [clientes, setClientes] = useState([]);
 
-  useEffect(()=> {
-    getAdmin().then((response) => {
-      console.log(response)
-      setAdmin(response);
-    });
-  },[admin]);
   
-  useEffect(()=> {
-    getFuncionario().then((response) => {
-      console.log(response)
-      setFuncionario(response);
-    });
-  },[funcionario]);
-  
-  useEffect(()=> {
-  getCliente().then((response) => {
-    console.log(response)
-    setClientes(response);
-  });
-},[clientes]);
-
   const VerificarLogin = () => {
-    admin.map((admin) => {
-      if(login === admin.email && senha === admin.senha){
-        alert(`Olá ${admin.nome}`);
-      }else{
-        
-
-      funcionario.map((funcionario) => {
-        if(login === funcionario.email && senha === funcionario.senha && funcionario.cargo.id === 1){
-          alert(`Olá ${funcionario.nome}`);
-        } else if (login === funcionario.email && senha === funcionario.senha && funcionario.cargo.id === 2){
-          alert(`Olá ${funcionario.nome}`);
+    getbyEmailCliente(login).then((response) => {
+      console.log(response);
+      setCliente(response);
+    });
+    
+    if(login === "grupo1@gmail.com" && senha === "123456"){
+      alert("Olá Admin");
+    } else if(login === "dentista@gmail.com" && senha === "123456"){
+      alert("Olá Dentista");
+    } else if(login === "recepcionista@gmail.com" && senha === "123456"){
+      alert("Olá Recepcionista");
+    } else {
+        if(login === cliente.email && senha === cliente.senha){
+          alert(`Òlá ${cliente.nome}`);
         } else {
-          clientes.map((cliente) => {
-            if(login === cliente.email && senha === cliente.senha){
-              alert(`Òlá ${cliente.nome}`);
-          } else {
-              alert("Login ou senha inválidos")
-            }
-          }
-        )}
-      })
-    }})
+          alert("Login ou senha inválidos")
+        }
+    }
   }
 
   return (
